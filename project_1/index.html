@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>My first web page</title>
-
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>    
+    <header class="main-navigation-wrapper gray-bg-color">    
         <nav>
-            <ul>
-                <li>Home</li>
+            <ul class="flex-box">
+                <li class="active-link"><a hsref="#">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="./contacts.html">Contact us</a></li>
-                <ul>
+                <ul class="display-none">
                     <li>Our shop</li>
                     <li>Our blog</li>
                 </ul>
@@ -23,8 +23,8 @@
         </nav>
     </header>
     
-    <main>
-        <aside>
+    <main class="flex-box">
+        <aside class="page-side-navigation light-brown-bg-color">
             <h3>left side panel</h3>
             <ol>
                 <li>news 1</li>
@@ -32,11 +32,11 @@
                 <li>news 3</li>
             </ol>
         </aside>
-        <section>
-            <section>
-                <div>#1</div>
-                <div>#2</div>
-                <div>#3</div>
+        <section class="central-content-area">
+            <section class="flex-box" >
+                <div class="info-block info-block-small dark-gray-bg-color">#1</div>
+                <div class="info-block info-block-large red-bg-color image-city-1">#2</div>
+                <div class="info-block info-block-medium light-gray-bg-color">#3</div>
             </section>
             <section>
                 <h1>Heading 1</h1>
@@ -103,7 +103,7 @@
                 </form>
             </section>
         </section>
-        <aside>
+        <aside class="page-side-navigation light-blue-bg-color">
             <h3>right side panel</h3>
         </aside>
     </main>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #000000; /*  0 - 9  A-F */
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+.gray-bg-color {
+    background-color: rgb(168, 168, 168);
+}
+.dark-gray-bg-color {
+    background-color: #919191;  
+}
+.light-gray-bg-color {
+    background-color: #E0E0E0;
+}
+.light-brown-bg-color {
+    background-color: #FCCBA1;
+}
+.red-bg-color {
+    background-color: #FF2600;
+}
+.light-blue-bg-color {
+    background-color: rgb(0, 132, 255);
+}
+
+/* Main menu */
+.main-navigation-wrapper {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+main {
+    margin-top: 40px; 
+}
+.main-navigation-wrapper nav ul {
+    list-style: none;
+    margin: 0;
+}
+.main-navigation-wrapper nav ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(.59,.14,1,.46);
+}
+.main-navigation-wrapper nav ul li:hover {
+    background-color: #340064;
+}
+.main-navigation-wrapper nav ul li a {
+    padding: 10px 20px 10px 5px;
+    text-decoration: none;
+    color: #fff;
+}
+.display-none {
+    display: none;
+}
+.main-navigation-wrapper nav ul li.active-link {
+    background-color: #340064;
+}
+.main-navigation-wrapper nav ul li.active-link a{
+    color:rgb(255, 37, 37);
+}
+
+
+
+.flex-box {
+    display: flex;
+}
+
+.central-content-area {
+    width: 60%;
+    padding: 10px;
+}
+.page-side-navigation {
+    width: 20%;
+}
+
+
+.central-content-area .info-block {
+    min-height: 150px;
+}
+.central-content-area .info-block-small {
+    width: 20%; /*calc(100%/20);*/
+}
+.central-content-area .info-block-large {
+    width: 50%; /*calc(100%/20);*/
+}
+.central-content-area .info-block-medium {
+    width: 30%; /*calc(100%/20);*/
+}
+
+
+.image-city-1 {
+    background-image: url("https://nature.berkeley.edu/sites/default/files/iStock_000065380283_Double_city.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+   /* background-attachment: fixed; */
+}
+
+
+footer {
+    background:rgb(54, 55, 55);
+    min-height: 60px;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+      color: white;
+    }
+    .display-none {
+        display: block;
+    }
+  }
