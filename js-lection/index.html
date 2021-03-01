@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .user-list {
+        padding: 10px;
+        background-color: #bbb; 
+    }
+    .user-list:nth-child(even) {
+        background-color: #eee; 
+    }
+</style>
+<body>
+    <form name="dl-form">
+        <input 
+            type="name"  
+            name="userName"
+            placeholder="enter you name" 
+            required>
+       <br>
+        <input 
+            type="email" 
+            name="userMail"
+            palceholder="enter you email" 
+            required 
+         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+        <br>
+        <input type="submit" value="Create user"> 
+    </form>
+
+    <div id="dislay-user-area"> </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
